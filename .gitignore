@@ -14,9 +14,9 @@
 
 # Build results
 [Dd]ebug/
-[Rr]elease/
-x64/
-[Bb]in/
+# [Rr]elease/ # we want to keep track of `.dll`s
+# x64/  # we want to keep track of `.dll`s
+# [Bb]in/ # we want to keep track of `.dll`s
 [Oo]bj/
 # build folder is nowadays used for build scripts and should not be ignored
 #build/
