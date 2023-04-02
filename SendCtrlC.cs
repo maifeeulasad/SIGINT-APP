@@ -31,6 +31,7 @@ namespace SigInt_CtrlC
         [return: MarshalAs(UnmanagedType.Bool)]
         private static extern bool GenerateConsoleCtrlEvent(CtrlTypes dwCtrlEvent, uint dwProcessGroupId);
 
+        [DllExport("StopProgram")]
         public static void StopProgram(int processId)
         {
             Process proc = Process.GetProcessById(processId);
